@@ -1,0 +1,123 @@
+body {
+  background-image: linear-gradient(#6c63ff, #011438);
+  font-family: 'Secular One', sans-serif;
+}
+main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+input {
+  display: block;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.formulario {
+  background-color: #f2f2f2;
+  grid-column: 1/2;
+  height: 100vh;
+}
+.info {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: rgb(167, 167, 167);
+}
+.botoes {
+  width: 80%;
+  margin: 10% auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.botao {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  width: 30%;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: background-color 0.25s, border 0.25s, color 0.25s, box-shadow 0.5s;
+}
+.ativo {
+  background-color: #6c63ff;
+  color: #f2f2f2;
+  box-shadow: 5px 5px 2px black;
+}
+.botao:hover {
+  background-color: white;
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+  cursor: pointer;
+  box-shadow: 10px 10px 2px black;
+}
+.form__container {
+  width: 80%;
+  margin: 7% auto 0 auto;
+}
+input {
+  width: 80%;
+  margin: 0 auto 2.5% 0;
+  border: 2px solid gray;
+  background-color: transparent;
+  color: gray;
+  padding: 2px 0px 2px 8px;
+}
+input:focus {
+  border-color: black;
+  color: black;
+}
+.enviar {
+  background-color: #6c63ff;
+  border: 1px solid transparent;
+  margin: 0 0 0 70%;
+  padding: 5px 16px 5px 16px;
+  color: #f2f2f2;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: background-color 0.25s, border 0.25s, color 0.25s, box-shadow 0.5s;
+}
+.enviar:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #6c63ff;
+  border: 1px solid #6c63ff;
+  box-shadow: 2px 2px 2px black;
+}
+.svg {
+  grid-column: 2/3;
+  margin: auto;
+}
+.erro__validacao {
+  margin-bottom: 2px;
+  color: #f73859;
+  font-size: 14px;
+}
+.input.possui-erro-validacao {
+  border-bottom: #f73859;
+}
+
+#form1 {
+  animation: form1 2s ease-in-out 2s infinite alternate;
+}
+#form2 {
+  animation: form2 2s ease-in-out 1s infinite alternate;
+}
+
+@keyframes form1 {
+  to {
+    transform: translatey(3%);
+  }
+}
+@keyframes form2 {
+  to {
+    transform: translatey(-2%);
+  }
+}
